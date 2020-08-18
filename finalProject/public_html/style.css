@@ -1,0 +1,52 @@
+table, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+td{
+	border-radius: 25px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 10px;
+	
+}
+.playerOneSide{
+	
+	background-color: #FFE6EA;
+}
+.playerTwoSide{
+	background-color: #E6E6FF;
+
+	
+}
+.buttons{
+	margin-right: 10%;
+}
+#headerForMain{
+	margin-left: 25%;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+table{
+	position: absolute;
+	margin-left: 15%;
+	margin-right: auto;
+	width: 70%;
+	height: 40%;
+}
+header{
+	margin-left: 160px;
+	
+}
+#leaderboard{
+	border: 1px solid black;
+	padding: 10px;
+	margin: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+

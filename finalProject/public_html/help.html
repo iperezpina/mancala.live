@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="helpStyle.css">
+<script src="clientSideMancalaio.js"></script>
+
+<head>
+	<meta charset="utf-8">
+	<title>Mancala</title>
+</head>
+
+<body>
+	<div id="headerForMain">
+		<header>
+			<h1>MANCALA HELP PAGE</h1>
+		</header>
+
+		<h2>RULES</h2>
+		<p>Click which player you want to play as. Four pieces are placed in each of the 12 holes in the center.
+			Each player has a 'store' to the side of the Mancala board. If you are player 1, it is on your left.
+			If you are player 2, it is on your right. The color of the pieces are irrelevant.
+			The game begins with one player picking up all of the pieces in any one of the holes on their side.
+			If you are player 1, your side is the top. If you are player 2, your side is the bottom. Moving
+			counter-clockwise, the player deposits one of the stones in each hole until the stones run out.
+		</p>
+		<ul>
+			<li>If you run into your own store, deposit one piece in it. If you run into your opponent's store, skip it.
+			</li>
+			<li>If the last piece you drop is in your own store, you get a free turn.</li>
+			<li>If the last piece you drop is in an empty hole on your side, you capture that piece and any pieces in
+				the hole directly opposite.</li>
+			<li>Always place all captured pieces in your store.</li><br>
+		</ul>
+		<input onclick="goToIndex();" type="button" id="return" value="Go to Game"><br><br>
+
+		<h2>LAYOUT/BUTTONS</h2>
+		<p>The "Player 1" and "Player 2" buttons are there for the user to choose whether they are playing as player 1
+			or player 2.
+			The HELP/RULES button takes the player to this page. The "Login" allows the player to login to their account
+			for this game. The
+			account allows the user to keep the game they started and be able to have a shot at being on the
+			leaderboard.</p><br>
+		<input onclick="goToIndex();" type="button" id="return2" value="Go to Game"><br><br>
+
+		<h2>HOW YOU WIN</h2>
+		<p>The game ends when all six spaces on one side of the Mancala board are empty.
+			The player who still has pieces on his side of the board when the game ends captures all of those pieces.
+			Count all the pieces in each store. The winner is the player with the most pieces.</p><br>
+		<input onclick="goToIndex();" type="button" id="return3" value="Go to Game"><br><br>
+
+		<h2>TIPS</h2>
+		<p>Planning ahead is essential to victory in board games like Mancala. Try to plan two or three moves into the
+			future.</p><br>
+		<input onclick="goToIndex();" type="button" id="return4" value="Go to Game"><br><br>
+
+
+
+
+
+
+
+	</div>
+</body>
+
+</html>

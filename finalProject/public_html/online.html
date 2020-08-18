@@ -1,0 +1,52 @@
+<!--Author Ivan Perez Pina, CSC337, Summer 2020
+    PA #10
+    Purpose: Page that contains the html for Ostaa
+    HOME PAGE -->
+
+    <!DOCTYPE html>
+    <html>
+        
+    <head>
+        <!--Header withe all presets-->
+        <meta charset="utf-8" />
+        <title>Mancala.io Servers</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="clientSideMancalaio.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+        
+    <body id="header" onload="change()">
+        <h1>Servers</h1>
+        
+    
+        <div id="firstCol">
+    
+            <input id="search" type="text">
+            <button onclick="searchServer()"> Search Servers </button>
+            <br /><br />
+    
+            <button onclick="allServers()"> Browse Servers </button>
+            <br /><br />
+    
+    
+            <form action="./createAServer.html">
+                <input type="submit" value="Create a Server" />
+            </form>
+        </div>
+
+        <h1> Servers list</h1>
+    
+    
+    
+        <div id="secondCol">
+            
+            
+        </div>
+    
+            
+        
+    </body>
+        
+        
+    </html>

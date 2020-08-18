@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Mancala</title>
+	<script src="./clientSideMancalaio.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body onload="change()">
+	<div id="headerForMain">
+		<header>
+			<h1>MANCALA</h1>
+			<h2 id="greeting"></h2>
+		</header>
+
+		<span class="buttons" id="clear"><input onclick="loginHome();" type="button" id="login" value="LOGIN">
+		</span>
+
+		<span class="buttons"><input onclick="goToHelp();" type="button" id="HELP" value="RULES/HELP">
+		</span>
+		
+		<input type="radio" id="AI" name="GAMEMODE" value="AI">
+		<label for="AI">AI</label>
+		<input type="radio" id="2player" name="GAMEMODE" value="2player">
+		<label for="2player">2 players</label><br>
+		
+		<span class="buttons"><input onclick="goToLeaderboard();" type="button" id="leader" value="LEADERBOARD">
+		</span>
+		
+		<span class="buttons"><input onclick="goToOnline();" type="button" id="onlineGame" value="ONLINE GAME">
+		</span>
+
+		<span class="buttons"><input onclick="newGame();" type="button" id="newgame" value="LOCAL GAME">
+		</span>
+		
+	</div>
+
+	<table>
+		<tr>
+			<th class="playerTwoSide" id="6" rowspan="2"><input onclick="clickSix();" type="button" id="table6"
+					value="6">
+				<div id="circle6"></div>
+
+			</th>
+			<td class="playerTwoSide" id="5"><input onclick="clickFive();" type="button" id="table5" value="5">
+				<div id="circle5"></div>
+
+			</td>
+			<td class="playerTwoSide" id="4"><input onclick="clickFour();" type="button" id="table4" value="4">
+				<div id="circle4"></div>
+
+			</td>
+			<td class="playerTwoSide" id="3"><input onclick="clickThree();" type="button" id="table3" value="3">
+				<div id="circle3"></div>
+
+			</td>
+			<td class="playerTwoSide" id="2"><input onclick="clickTwo();" type="button" id="table2" value="2">
+				<div id="circle2"></div>
+
+			</td>
+			<td class="playerTwoSide" id="1"><input onclick="clickOne();" type="button" id="table1" value="1">
+				<div id="circle1"></div>
+
+			</td>
+			<td class="playerTwoSide" id="0"><input onclick="clickZero();" type="button" id="table0" value="0">
+				<div id="circle0"></div>
+
+			</td>
+			<th class="playerOneSide" id="13" rowspan="2"><input onclick="clickThirteen();" type="button" id="table13"
+					value="13">
+				<div id="circle13"></div>
+
+			</th>
+
+		</tr>
+		<tr>
+			<td class="playerOneSide" id="7"><input onclick="clickSeven();" type="button" id="table7" value="7">
+				<div id="circle7"></div>
+			</td>
+			<td class="playerOneSide" id="8"><input onclick="clickEight();" type="button" id="table8" value="8">
+				<div id="circle8"></div>
+
+			</td>
+			<td class="playerOneSide" id="9"><input onclick="clickNine();" type="button" id="table9" value="9">
+				<div id="circle9"></div>
+
+			</td>
+			<td class="playerOneSide" id="10"><input onclick="clickTen();" type="button" id="table10" value="10">
+				<div id="circle10"></div>
+
+			</td>
+			<td class="playerOneSide" id="11"><input onclick="clickEleven();" type="button" id="table11" value="11">
+				<div id="circle11"></div>
+
+			</td>
+			<td class="playerOneSide" id="12"><input onclick="clickTweleve();" type="button" id="table12" value="12">
+				<div id="circle12"></div>
+
+			</td>
+		</tr>
+	</table>
+
+
+
+
+	<div id="marblesBank">Marbles to use: </div>
+	<br><br>
+	<div class="buttons"><input onclick="changeToPlayer1();" type="button" id="player1" value="PLAYER 1">
+	</div><br><br>
+	<div class="buttons"><input onclick="changeToPlayer2();" type="button" id="player2" value="PLAYER 2">
+	</div>
+</body>
+
+</html>
